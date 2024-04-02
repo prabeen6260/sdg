@@ -6,12 +6,13 @@ import { CreateBlog } from './components/blogs/createBlog';
 import { FlightCarbonCalculator} from './components/calculator/flightCarbonCalculator';
 import { EcommerceCarbonCalculator } from './components/calculator/ecommerceCarbonCalculator';
 import { Shop } from './components/shop/shop';
+import { HashRouter } from 'react-router-dom';
 
 function App() {
 
   return (
       <div>
-        <Router>
+        <HashRouter>
           <Routes>
           <Route path="/" element ={<Register/>} />
           <Route path="/register" element ={<Register/>} />
@@ -23,7 +24,7 @@ function App() {
         <Route path = '/ecommerceCalculator' element ={<EcommerceCarbonCalculator/>}/>
         <Route path = '/shop' element ={<Shop/>}/>
          </Routes>
-        </Router>
+        </HashRouter>
         </div>
   )
 }
