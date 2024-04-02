@@ -1,0 +1,30 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.formBox{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+.heading{
+    color: rgb(230, 230, 240);
+    padding-bottom: 10%;
+    position: absolute;
+    bottom: 70%;
+    left: 40%;
+
+}
+button{
+    border-radius: 50px;
+}
+.description{
+    height: 100%;
+    background-color: rgb(252, 248, 248);
+    color: black;
+}

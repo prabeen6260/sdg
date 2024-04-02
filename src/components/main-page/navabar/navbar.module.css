@@ -1,0 +1,99 @@
+body{
+  display: flex;
+  
+}.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3%;
+  z-index: 2;
+  /*background: linear-gradient(rgb(20,20,20)0%,rgb(20,100,100)100%);*/
+  width: 100vw;
+  padding-bottom: 20px;
+  box-shadow: 0.5px 0.5px 5px 0.5px #ffffff;
+  font-family:monospace;
+}
+  
+  .title {
+    font-size: 30px;
+    font-weight: 600;
+    text-decoration: none;
+    color: antiquewhite;
+  }
+  .title:hover {
+    transition: 0.2s;
+    text-shadow: 5px 5px 10px rgb(0, 0, 0);
+    color: aqua;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  
+  .menuBtn {
+    display: none;
+  }
+  
+  .menuItems {
+    display: flex;
+    gap: 60px;
+    list-style: none;
+  }
+  
+  .menuItems a {
+    font-size: 25px;
+    color: rgb(253, 211, 211);
+    text-decoration: none;
+  }
+  li .Link:hover {
+    padding-block: 10px;
+    padding-inline: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0.5px 0.5px 5px 0.5px #ffffff;
+    color: aqua;
+  }
+  
+  @media screen and (max-width: 830px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  
+    .menu {
+      position: relative;
+      right: 0;
+      margin-right: 10%;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 11px;
+      z-index: 3;
+    }
+    .menuBtn {
+      display: block;
+      justify-content: center;
+      cursor: pointer;
+    }
+  
+    .menuItems {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 13px;
+      border-radius: 10px;
+      background: rgb(25, 55, 109);
+      background: linear-gradient(
+        0deg,
+        rgba(25, 55, 109, 0.2) 0%,
+        rgba(25, 55, 109, 1) 100%
+      );
+      padding: 24px 33px;
+      box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    }
+  
+    .menuOpen {
+      display: flex;
+      z-index: 1;
+    }
+  }

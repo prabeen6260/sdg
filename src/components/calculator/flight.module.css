@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(rgb(10,10,10)0%,rgb(10,200,200)100%);
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100vw;
+    font-family:monospace;
+}
+
+.heading{
+    color: rgb(230, 230, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10%;
+    position: absolute;
+    top: 10%;
+    right: 35%;
+    font-family: monospace;
+}
+h2{
+    font-weight: 600;
+}
+
+.example{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.ex{
+    color: rgb(174, 219, 237);
+}
+.form {
+    font-size: 30px;
+    color: black;
+    width: 60%;
+    font-weight: 600;
+    
+
+}
+input{
+    color: aliceblue;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    margin-left: 3%;
+}
+.result{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8%;
+    font-size: 50px;
+    position: absolute;
+    right: 25%;
+    font-weight: 700;
+}
