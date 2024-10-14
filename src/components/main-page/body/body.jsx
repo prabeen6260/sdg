@@ -9,7 +9,7 @@ export const Body = () => {
       fetchBlogData();
     },[])
     const fetchBlogData= async()=>{
-      const result= await axios.get("https://backend-blog-419103.uk.r.appspot.com/formData");
+      const result= await axios.get("https://sdg-backend-blogs.uc.r.appspot.com/formData");
       console.log(result);
       getBlogData(result.data.data)
     }
@@ -18,7 +18,7 @@ export const Body = () => {
       <div className={styles.body}>
         {blogData === null ? "" : blogData.map((data, index) => (
           <div key={index} className={styles.blogBox}>
-            <img className={styles.pic} src={data.img} alt={`Image ${index}`} />
+            <img className={styles.pic} src={data.photo} alt={`Image ${index}`} />
           <h1 className={styles.title}>{data.title}</h1>
           <p className={styles.name}>By: {data.name}</p>
           

@@ -19,16 +19,7 @@ export const CreateBlog=()=>{
   const handleDescription=(e)=>{
     setDescription(e.target.value)
   }
-//   const convertBase = (e)=>{
-//     var reader = new FileReader();
-//     reader.readAsDataURL(e.target.files[0]);
-//     reader.onload=()=>{
-//         console.log(reader.result);
-//         setImg(reader.result)
-//     }
-//     reader.onerror=error=>{
-//         console.log("error")
-//     }
+
     const handleInput=(e)=>{
         console.log(e.target.files[0])
         setImage(e.target.files[0])
@@ -38,11 +29,11 @@ export const CreateBlog=()=>{
         e.preventDefault();
         const formData = new FormData();
         console.log('inside handle submit')
-        formData.append("image", image);
+        formData.append("photo", image);
         formData.append("name", name);
         formData.append("title", title);
         formData.append("description", description);
-        await axios.post("https://backend-blog-419103.uk.r.appspot.com/uploadImg",formData,{
+        await axios.post("https://sdg-backend-blogs.uc.r.appspot.com/imgUpload",formData,{
             headers: { "Content-Type": "multipart/form-data"}
         })
         alert("Posted successfully")

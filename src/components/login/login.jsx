@@ -12,7 +12,7 @@ const Login = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post( 'https://backend-login-419104.uk.r.appspot.com/login', {email, password})
+        axios.post( 'https://sdg-login.uc.r.appspot.com/login', {email, password})
         .then(result => {
             console.log('login running');
             if(result.data === "Success"){

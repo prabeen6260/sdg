@@ -13,7 +13,7 @@ const Register = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         
-        axios.post( 'https://backend-login-419104.uk.r.appspot.com/register', {name, email, password})
+        axios.post( 'https://sdg-login.uc.r.appspot.com/register', {name, email, password})
         .then(result => {
             console.log(result);
             if(result.data === "Already registered"){
