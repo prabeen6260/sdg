@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import axios from 'axios';
 import styles from './createBlog.module.css';
 import { useNavigate } from 'react-router-dom';
@@ -48,7 +48,8 @@ export const CreateBlog=()=>{
         <h1 className={styles.heading}>Create a Story</h1>
         <div className={styles.labelBox}>
             <form  className={styles.formBox} onSubmit={handleSubmit} encType="multipart/form-data">
-               <input  type='file' accept='image/*' id='browseFile' onChange={handleInput}></input>
+                <input className={styles.upload}  type='file' accept='image/*' id='browseFile' onChange={handleInput}></input>
+                <label htmlFor="browseFile" className={styles.customUploadButton}>Upload Image</label>
                 <input className={styles.name} name='name' placeholder='Name' onChange={handleName} required></input>
                 <input className={styles.title} name='title' placeholder='Title' onChange={handleTitle} required ></input>
                 <textarea className={styles.description} name='description' placeholder='Write your story here' onChange={handleDescription} required></textarea>

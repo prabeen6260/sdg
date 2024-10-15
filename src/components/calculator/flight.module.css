@@ -1,7 +1,7 @@
 body{
     background: linear-gradient(rgb(10,10,10)0%,rgb(10,200,200)100%);
 }
-.box{
+div .box{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -35,7 +35,7 @@ h2{
 .ex{
     color: rgb(174, 219, 237);
 }
-.form {
+.form1 {
     font-size: 30px;
     color: black;
     width: 60%;
@@ -43,11 +43,13 @@ h2{
     
 
 }
-input{
+.form1 input{
     color: aliceblue;
     border-radius: 10px;
     margin-bottom: 5%;
     margin-left: 3%;
+    height: 40px;
+    width: 300px;
 }
 .result{
     display: flex;
@@ -58,4 +60,8 @@ input{
     position: absolute;
     right: 25%;
     font-weight: 700;
+}
+.form1 button:hover{
+    background-color: rgb(37, 94, 52);
+    transform: scale(1.05);
 }

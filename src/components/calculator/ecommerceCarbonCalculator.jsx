@@ -56,9 +56,10 @@ export const EcommerceCarbonCalculator = () => {
         Destination Country Code: US <br/>
         Destination Country Code: 10001 <br/>
         Package Weight(kg): 20 <br/><br/>
-        This is used to estimate co2 emission of a package's journey from its shipment location to the collection point</p>
+        This is used to estimate co2 emission of a package's journey
+        from its shipment location to the collection point</p>
       </div>
-      <form onSubmit={handleSubmit} className={styles.form}>
+      <form onSubmit={handleSubmit} className={styles.form2}>
         <div>
           <label htmlFor="originCountryCode">Origin Country Code :</label>
           <input type="text" id="originCountryCode" name="originCountryCode" value={formData.originCountryCode} onChange={handleChange} required />

@@ -58,7 +58,7 @@ export const FlightCarbonCalculator = () => {
         This is used to estimate your co2 emission based on distance between airports.
         </p>
       </div>
-      <form onSubmit={handleSubmit} className={styles.form}>
+      <form onSubmit={handleSubmit} className={styles.form1}>
         <div>
           <label htmlFor="airportFrom">Airport From (IATA code)   </label>
           <input type="text" id="airportFrom" name="airportFrom" value={formData.airportFrom} onChange={handleChange} required />
